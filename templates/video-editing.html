@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12 text-center mb-5">
+        <h1>Video Editing Portfolio</h1>
+        <p class="lead">Showcasing my creative video projects and editing skills</p>
+    </div>
+</div>
+
+<div class="row">
+    {% for project in projects %}
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='images/' + project.thumbnail) }}" class="card-img-top" alt="{{ project.title }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description }}</p>
+                <div class="mb-2">
+                    {% for skill in project.skills %}
+                    <span class="badge bg-primary me-1">{{ skill }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="card-footer bg-white">
+                <a href="{{ project.link }}" class="btn btn-outline-primary">View Project</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-6">
+        <h3>Video Editing Skills</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Kinemaster</li>
+            <li class="list-group-item">Capcut</li>
+            <li class="list-group-item">Color Grading</li>
+            <li class="list-group-item">Motion Graphics</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h3>Editing Services</h3>
+        <div class="card">
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Music Videos</li>
+                    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Social Media Content</li>
+                    <li><i class="bi bi-check-circle-fill text-success me-2"></i> YouTube Videos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

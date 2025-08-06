@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero-section text-center py-5 bg-light mb-5">
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Jhanavarshan V" class="rounded-circle mb-4" width="150">
+        <h1 class="display-4">Jhanavarshan V</h1>
+        <p class="lead">Video Editor & Full Stack Developer</p>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <a href="/video-editing" class="btn btn-primary btn-lg">View Video Work</a>
+            <a href="/projects" class="btn btn-outline-primary btn-lg">View Tech Projects</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">About My Video Editing</h3>
+                    <p class="card-text">
+                        I specialize in creating compelling visual stories through professional video editing. 
+                        With expertise in Kinemaster, Capcut, and VN-video editor, I transform raw 
+                        footage into polished, engaging content for various platforms.
+                    </p>
+                    <a href="/video-editing" class="btn btn-primary">See My Video Portfolio</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">About My Development Skills</h3>
+                    <p class="card-text">
+                        As a full stack developer, I build robust web applications using Python, JavaScript, 
+                        and modern frameworks. My projects range from e-commerce sites to machine learning 
+                        applications, all with clean code and intuitive interfaces.
+                    </p>
+                    <a href="/projects" class="btn btn-primary">View Development Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h2 class="text-center mb-4">Featured Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="p-3 border rounded">
+                        <i class="bi bi-film display-6 text-primary mb-3"></i>
+                        <h4>Video Editing</h4>
+                        <p>Professional editing for all types of content</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-3 border rounded">
+                        <i class="bi bi-code-slash display-6 text-primary mb-3"></i>
+                        <h4>Web Development</h4>
+                        <p>Full stack applications with modern tech</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-3 border rounded">
+                        <i class="bi bi-magic display-6 text-primary mb-3"></i>
+                        <h4>Motion Graphics</h4>
+                        <p>Dynamic animations and visual effects</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-3 border rounded">
+                        <i class="bi bi-diagram-3 display-6 text-primary mb-3"></i>
+                        <h4>Full Stack</h4>
+                        <p>End-to-end system development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

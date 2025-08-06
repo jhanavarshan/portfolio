@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h2>Jhanavarshan V</h2>
+                <p class="mb-0">+91 9361599438 | Jhanavarshanv@gmail.com | LINKEDIN.COM/IN/JHANAVARSHAN-V-969352276/</p>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Education</h3>
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item">GRT Mahalakshmi Vidyalaya, Ashok Nagar, Chennai - 600083 (SSC)</li>
+                    <li class="list-group-item">Annai Veilankani Matriculation Higher Secondary School, Saidapet, Chennai - 600015 (HSC)</li>
+                    <li class="list-group-item">ST. Joseph's Institute of Technology, OMR, Chennai - 600119 (B.E)</li>
+                </ul>
+
+                <h3 class="card-title">Work Experience</h3>
+                <div class="mb-3">
+                    <h5>Web Design Internship - RK Techsoft, Porur</h5>
+                    <p>Utilized HTML, CSS, and JavaScript to develop an innovative front-end design for a shopping website.</p>
+                </div>
+                <div class="mb-3">
+                    <h5>Full stack development internship - Brandsmart, Maduravoyal</h5>
+                    <p>Created an online platform for managing the accounts and an inventory management system to maintain the raw materials stock and products stock.</p>
+                </div>
+
+                <h3 class="card-title">Technical Skills</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><strong>Languages:</strong> C, C++, Python, Javascript, HTML, CSS, PHP</li>
+                            <li class="list-group-item"><strong>Designing Tools:</strong> Figma</li>
+                            <li class="list-group-item"><strong>Databases:</strong> MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><strong>Frameworks:</strong> Django, Flask</li>
+                            <li class="list-group-item"><strong>Version control:</strong> Git</li>
+                            <li class="list-group-item"><strong>Developer Tools:</strong> VsCode, Github</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="{{ url_for('static', filename='Jhanavarshan_CV.pdf') }}" class="btn btn-primary" download>Download Full Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

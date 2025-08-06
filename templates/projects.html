@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12 text-center mb-5">
+        <h1>Development Projects</h1>
+        <p class="lead">Showcasing my technical projects and coding skills</p>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Shopping Website -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='images/shopping-site.jpg') }}" class="card-img-top" alt="Shopping Website">
+            <div class="card-body">
+                <h5 class="card-title">Shopping Website</h5>
+                <p class="card-text">A responsive shopping website with dynamic cart functionality and user-friendly product layout.</p>
+                <div class="mb-2">
+                    <span class="badge bg-primary me-1">HTML</span>
+                    <span class="badge bg-primary me-1">CSS</span>
+                    <span class="badge bg-primary me-1">JavaScript</span>
+                </div>
+            </div>
+            <div class="card-footer bg-white">
+                <a href="https://github.com/jhanavarshan" class="btn btn-outline-primary">View Details</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Virtual Painter -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='images/virtual-painter.jpg') }}" class="card-img-top" alt="Virtual Painter">
+            <div class="card-body">
+                <h5 class="card-title">Virtual Painter</h5>
+                <p class="card-text">A virtual painter using OpenCV and Mediapipe that lets users draw with hand gestures.</p>
+                <div class="mb-2">
+                    <span class="badge bg-primary me-1">Python</span>
+                    <span class="badge bg-primary me-1">OpenCV</span>
+                    <span class="badge bg-primary me-1">MediaPipe</span>
+                </div>
+            </div>
+            <div class="card-footer bg-white">
+                <a href="https://github.com/jhanavarshan" class="btn btn-outline-primary">View Details</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inventory Management -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='images/inventory-system.jpg') }}" class="card-img-top" alt="Inventory Management">
+            <div class="card-body">
+                <h5 class="card-title">Inventory Management System</h5>
+                <p class="card-text">Tracks and updates raw material stock in real-time based on product manufacturing.</p>
+                <div class="mb-2">
+                    <span class="badge bg-primary me-1">Python</span>
+                    <span class="badge bg-primary me-1">Django</span>
+                    <span class="badge bg-primary me-1">MySQL</span>
+                </div>
+            </div>
+            <div class="card-footer bg-white">
+                <a href="https://github.com/jhanavarshan" class="btn btn-outline-primary">View Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <!-- Accounts Management -->
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Accounts Management System</h5>
+                <p class="card-text">Tracks income, expenses, and transactions with budgeting and reporting features.</p>
+                <div class="mb-2">
+                    <span class="badge bg-primary me-1">Django</span>
+                    <span class="badge bg-primary me-1">Python</span>
+                    <span class="badge bg-primary me-1">JavaScript</span>
+                </div>
+            </div>
+            <div class="card-footer bg-white">
+                <a href="https://github.com/jhanavarshan" class="btn btn-outline-primary">View Details</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drowning Detection -->
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Drowning Detection System</h5>
+                <p class="card-text">ML-based system using RSSI data to classify swimmer safety without cameras.</p>
+                <div class="mb-2">
+                    <span class="badge bg-primary me-1">Python</span>
+                    <span class="badge bg-primary me-1">Flask</span>
+                    <span class="badge bg-primary me-1">Machine Learning</span>
+                </div>
+            </div>
+            <div class="card-footer bg-white">
+                <a href="https://github.com/jhanavarshan" class="btn btn-outline-primary">View Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
